@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: #fd0000;
+            animation-name: animationone;
+            animation-duration: 2s;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            border-radius: 50%;
+
+        }
+        body{
+background-color: black;
+        }
+        @keyframes animationone {
+            0%{
+                top: 0px;
+                left: 0px;
+                position: relative;
+                background-color:green ;
+            }
+        33%{
+                top: 600px;
+                left: 700px;
+                position: relative;
+                background-color: aquamarine;
+            }
+        66%{
+                top: 0px;
+                left: 1400px;
+                position: relative;
+                background-color: blue;
+            }
+            99%{
+                top: 0px;
+                left: 0px;
+                position: relative;
+                background-color: #fd0000;
+            }
+          
+        }
+    </style>
+</head>
+<body>
+    
+<div></div>
+
+
+
+</body>
+</html>

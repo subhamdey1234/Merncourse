@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function armstrong(n) {
+            let sum=0;
+            let org=n;
+            let n1=String(n);
+            let len=n1.length;
+            while (n>0) {
+                let digit=n%10;
+                n=Math.trunc(n/10);
+                sum+=Math.pow(digit,len);
+            }
+            if (sum==org) {
+                console.log("Armstrong");
+                
+            }
+            else{
+                console.log("Not Armstrong");
+            }
+           
+        }
+        armstrong(Number(prompt("Enter the Number for Armstrong")));
+   
+
+        function isArmstrongNumber(num) {
+    let sum = 0;
+    let temp = num;
+    const numberOfDigits = num.toString().length;
+
+    while (temp > 0) {
+        let digit = temp % 10;
+        sum += Math.pow(digit, numberOfDigits);
+        temp = Math.floor(temp / 10);
+    }
+
+    return sum === num;
+}
+
+function displayArmstrongNumbers(start, end) {
+    for (let i = start; i <= end; i++) {
+        if (isArmstrongNumber(i)) {
+            console.log(i);
+        }
+    }
+}
+
+displayArmstrongNumbers(100, 1000);
+
+        function factorial(n) {
+    let f = 1;
+    for (let i = 1; i <= n; i++) {
+        f = f * i;
+    }
+    return f;
+}
+
+function strongnumber(n) {
+    let temp = n;  
+    let sum = 0;
+    while (n > 0) {
+        let r = n % 10;  
+        sum += factorial(r);  
+        n = Math.trunc(n / 10);  
+    }
+
+    if (temp == sum) {
+        console.log(temp + " is a Strong Number");
+    } else {
+        console.log(temp + " is not a Strong Number");
+    }
+}
+
+strongnumber(Number(prompt("enter the number-->")));
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

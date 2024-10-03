@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function main() {
+            for(let i=1;i<=10;i++)
+        {
+            if (i%2==0) 
+                break; 
+            console.log(i);
+        }
+        console.log("Outside the for loop");
+    
+        }
+        main();
+        console.log("Outside the main function");
+
+        function maincontinue() {
+            for(let i=1;i<=10;i++)
+        {
+            if (i%2==0) 
+                continue; 
+            console.log(i);
+        }
+        console.log("Outside the for loop");
+    
+        }
+        maincontinue();
+        console.log("Outside the main function");
+
+
+        function mainreturn() {
+            for(let i=1;i<=10;i++)
+        {
+            if (i%2==0) 
+                return;
+            console.log(i);
+            console.log("---Hii---");
+            
+        }
+        console.log("Outside the for loop");
+    
+        }
+        mainreturn();
+        console.log("Outside the main function");
+        
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>

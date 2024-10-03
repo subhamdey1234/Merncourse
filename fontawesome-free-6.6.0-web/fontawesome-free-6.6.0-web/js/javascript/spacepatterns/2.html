@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pattern(n) {
+            let st="";
+      for(let i=1;i<=n;i++)
+        {
+     for(let j=0;j<i;j++)
+     {
+        st+=" ";
+     }
+     for(let j=(n+1)-i;j>=1;j--)
+     {
+        st+=j;
+        }
+        st+="\n";
+        }
+
+        console.log(st);
+        
+        }
+        pattern(Number(prompt("enter the N value for 0th pattern=>")));
+ 
+        function p1(n) {
+            let st="";
+      for(let i=1;i<=n;i++)
+        {
+     for(let j=0;j<i;j++)
+     {
+        st+=" ";
+     }
+     for(let j=(n+1)-i;j>=1;j--)
+     {
+        st+="*";
+        }
+        st+="\n";
+        }
+
+        console.log(st);
+        }
+        p1(Number(prompt("enter the n value for pattern 1=>")));
+       
+        function p2(n) {
+            let st="";
+      for(let i=0;i<n;i++)
+        {
+     for(let j=0;j<i;j++)
+     {
+        st+=" ";
+     }
+     for(let j=n;j>i;j--)
+     {
+        st+=j;
+        }
+        st+="\n";
+        }
+
+        console.log(st);
+        }
+        p2(Number(prompt("Enter the number of for pattern 2 n=>")));
+
+
+        function p3(n) {
+            let st="";
+      for(let i=0;i<n;i++)
+        {
+     for(let j=0;j<i;j++)
+     {
+        st+=" ";
+     }
+     for(let j=1;j<=(n-i);j++)
+     {
+        st+=j;
+        }
+        st+="\n";
+        }
+
+        console.log(st);
+        }
+        p3(Number(prompt("Enter the number n=")));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

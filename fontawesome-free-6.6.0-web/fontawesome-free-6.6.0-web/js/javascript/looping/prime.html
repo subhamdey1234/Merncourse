@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function prime(n) {
+          if (n<2) {
+            return false;
+          }  
+          for(let i=2;i<=Math.trunc(n/2);i++)
+          {
+            if (n%i==0) {
+                return false;
+            }
+            
+          }
+          return true;
+        }
+     console.log(prime(Number(prompt("Enter the number==>")))
+     );
+     let ll=Number(prompt("Enter the starting point"));
+     let ul=Number(prompt("Enter the ending point"));
+     console.log(`the prime numbers from ${ll} to ${ul} is=>`); 
+     for(let i=ll;i<=ul;i++)
+     {
+
+        if(prime(i))
+     {
+        console.log(`${i}`);
+        
+     }
+
+     }
+    console.log("Alternating prime numbers==>");//we can use flag boolean instead of c variable.
+    let c=0;
+    for(let j=10;j<=100;j+=2)
+    {
+        if (prime(j)) {
+        c++;
+        if (c%2!=0) {
+            console.log(`${j}`);
+    }
+            
+        }
+
+    }
+
+    
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

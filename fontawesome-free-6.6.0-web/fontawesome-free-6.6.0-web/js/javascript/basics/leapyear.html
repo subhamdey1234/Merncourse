@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function leapyr() {
+            let year=document.getElementById('yr').value;
+            Number(year);
+            if((year%400==0 || year%100!=0) && (year%4==0))
+        {
+           document.getElementById('result').innerText=`Congrats!! The Year ${year} is a Leap Year`;
+            
+        }
+        else{
+            document.getElementById('res').innerText=`Sorry!! The Year ${year} is Not a  Leap Year`;
+
+        }
+
+        }
+      
+
+    
+
+    </script>
+
+<style>
+   body{
+    background-image: url(./earth.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   h1{
+text-align: center;
+color: aliceblue;
+font-weight: 700;
+text-decoration: underline;
+font-size:50px;
+margin-top: 200px;
+    }
+    form{
+text-align: center;
+color: aliceblue;
+    }
+    form label{
+margin-top: 10px;
+font-weight: 500;
+font-size: 40px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    form input{
+margin-top: 10px;
+padding: 6px;
+width: 300px;
+text-align: center;
+font-weight: 800;
+border-radius: 10px;
+height: 30px;
+font-size: 20px;
+    }
+    form button{
+margin-top: 30px;
+border: 2px solid rgb(220, 95, 143);
+border-radius: 10px;
+width: 200px;
+padding: 6px;
+background-color: rgb(243, 59, 71);
+color: rgb(229, 221, 221);
+font-weight: 800;
+cursor: pointer;
+    }
+     #result{
+text-align: center;
+color: rgb(86, 240, 75);
+font-size: xx-large;
+font-weight: 900;
+font-family: 'Times New Roman', Times, serif;
+
+    }
+    #res{
+        text-align: center;
+color: rgb(228, 210, 226);
+font-size: xx-large;
+font-weight: 900;
+font-family: 'Times New Roman', Times, serif;
+text-shadow: 15px 25px solid white;
+    }
+    form button:hover{
+        transition: 1s;
+        background-color: greenyellow;
+        font-weight: 800;
+        color: black;
+    }
+    ::placeholder{
+        color: rgb(58, 47, 47);
+        font-weight: 800;
+        text-align: center;
+    }
+    #copyright{
+        font-weight: 600;
+    color: rgb(246, 246, 246);
+    text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+</style>
+
+</head>
+<body>
+<h1>Leap Year Determiner</h1>
+
+    <form  action="">
+        <label for="yr">Enter the year</label>
+        <br>
+        <input placeholder="Enter the Year" type="number" id="yr">
+        <br>
+     <button type="button" onclick="leapyr()">Submit</button>
+    </form>
+
+   <p id="result"></p> 
+   <p id="res"></p>
+   <p id="copyright">copyright @Subham Dey</p>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display flex example for conatiners</title>
+    <style>
+        .child{
+            background-color: brown;
+            color: aliceblue;
+         
+           width: 200px;
+           height: 100px;
+          
+        }
+        .container{
+            flex-direction:row;       /*row,column,row-reverse,column-reverse*/
+            display: flex;
+            column-gap: 50px;
+            gap: 50px;                  /*col-gap,row-gap,gap*/
+            border: 2px solid black;
+            height: 500px;
+            flex-wrap:  wrap;                    /* nowrap ,wrap,wrap-reverse  */
+            justify-content: space-between;     /*space-evenly,start,end,space-between,space-around*/
+            align-content: center;               /*space-evenly,start,end,space-between,space-around*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+              <div class="child">Item 1</div>
+              <div class="child">Item 2</div>
+              <div class="child">Item 3</div>
+              <div class="child">Item 4</div>
+              <div class="child">Item 5</div>
+              <div class="child">Item 6</div>
+              <div class="child">Item 7</div>
+              <div class="child">Item 8</div>
+           
+              
+    </div>
+
+</body>
+</html>

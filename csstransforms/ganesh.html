@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+    border: 2px solid  rgb(243, 149, 68);
+    height: 400px;
+    width: 300px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+img{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    transition: all 1s linear 0s;
+       
+}
+img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    
+}
+.curtain{
+height: inherit;
+width: inherit;
+border: 2px solid rgb(251, 158, 27);
+border-radius: inherit;
+background-color: rgba(255, 166, 0, 0.648);
+
+position: absolute;
+top: 0px;
+transition: all 6s linear 0s;
+}
+.curtain:hover{
+    transform: translateY(-400px);
+    background-color: red;
+   
+}
+body{
+    background-image: linear-gradient(75deg,orange,rgb(108, 150, 108),rgb(198, 143, 143),yellow);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+h1{
+    font-family: monospace;
+    text-shadow: 2px 5px 10px rgb(255, 0, 0);
+    font-weight: 900;
+
+    color: rgb(239, 230, 230);
+}
+.curtain>p{
+text-align: center;
+font-family: monospace;
+    text-shadow:5px 5px 5px rgb(61, 34, 11);
+    font-weight:bolder;
+font-size: 25px;
+    color: rgb(255, 255, 255);
+margin-top: 150px;
+}
+
+
+ #play-button{
+   margin-left: 10px;
+    border-radius: 12px;
+    background-color: orange;
+    border: white;
+    text-shadow: 1px 0px 20px solid rgb(254, 159, 159);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    width: 270px;
+    height: 40px;
+    font-weight: 900;
+
+}
+#play-button:hover{
+    background-color: red;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+    </style>
+</head>
+<body>
+    <marquee behavior="" bgcolor="black" loop="" direction="left"><h1>वक्र तुंड महाकाय, सूर्य कोटि समप्रभ:। निर्विघ्नं कुरु मे देव शुभ कार्येषु सर्वदा॥ गजानन की वदंना करने के साथ हर कामना पूर्ण करने और भाग्य जगाने के लिए इस मंत्र का जाप करें। नमामि देवं सकलार्थदं तं सुवर्णवर्णं भुजगोपवीतम्ं।</h1></marquee>
+    <img style="margin-left: 460px;height: 150px;" src="https://media.tenor.com/2MtkoKvNDZ4AAAAi/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%97%E0%A4%A8%E0%A5%87%E0%A4%B6%E0%A4%BE%E0%A4%AF%E0%A4%A8%E0%A4%AE-happy-ganesh-chaturthi.gif" alt="" srcset="">
+
+    <button id="play-button" onclick="toggleMusic()">Click Play music to Worship</button>
+    <img style="margin-top: 0px;height: 150px;" src="https://media.tenor.com/2MtkoKvNDZ4AAAAi/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%97%E0%A4%A8%E0%A5%87%E0%A4%B6%E0%A4%BE%E0%A4%AF%E0%A4%A8%E0%A4%AE-happy-ganesh-chaturthi.gif" alt="" srcset="">
+
+<div class="container">
+    
+    <img src="https://idolkart.com/cdn/shop/articles/Wife_of_Lord_Ganesha.jpg?v=1700210846&width=1500" alt="" srcset="">
+<div class="curtain"><p >JAI SHREE GANESHA</p></div>
+</div>    
+
+
+<audio id="background-music" src="./Jai Shree Ganesha_64(PagalWorld.com.sb).mp3"  loop>
+    Your browser does not support the <code>audio</code> element.
+</audio>
+
+
+<script>
+    function toggleMusic() {
+        var music = document.getElementById('background-music');
+        if (music.paused) {
+            music.play();
+        } else {
+            music.pause();
+        }
+    }
+</script>
+
+
+</body>
+</html>

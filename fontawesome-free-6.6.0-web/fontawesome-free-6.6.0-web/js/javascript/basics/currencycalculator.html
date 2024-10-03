@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function main() {
+            let amt=Number(prompt("Enter the Amount"));
+            if (amt>=2000) {
+                let c2000=Math.trunc(amt/2000);
+            console.log(`2000 * ${c2000} = ${2000*c2000}`);
+            amt=amt%2000;
+            }
+        
+            if (amt>=500) {
+                let c500=Math.trunc(amt/500);
+            console.log(`500 * ${c500} = ${500*c500}`);
+            amt=amt%500; 
+            } 
+            
+            if (amt>=200) {
+        let c200=Math.trunc(amt/200);
+            console.log(`200 * ${c200} = ${200*c200}`);
+            amt=amt%200;
+        
+    }
+           
+            if (amt>=100) {
+                let c100=Math.trunc(amt/100);
+            console.log(`100 * ${c100} = ${100*c100}`);
+            amt=amt%100;
+            }
+           
+if (amt<100) {
+    console.log("minimum balance should be 100");
+    return;
+}
+       
+        }
+        main();
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

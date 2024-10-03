@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background-image: linear-gradient( 109.6deg,  rgba(102,51,153,1) 11.2%, rgba(2,0,4,1) 91.1% );
+    background-repeat: no-repeat;
+    height: 100vh;
+    }
+    h1{
+        text-align: center;
+        text-decoration: underline;
+        font-size: 40px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: aliceblue;
+        font-style: oblique;
+    }
+   .formcontainer{
+    margin-left: 600px;
+    margin-top:50px;
+   }
+   .formcontainer form{
+      color: aliceblue;
+     
+   }
+label,input{
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    padding: 8px;
+    border-radius: 12px;
+    width: 240px;
+    font-size: 20px;
+
+}
+
+
+
+button{
+    text-align: center;
+    margin-left: 230px;
+    margin-top: 20px;
+    background-color: red;
+   border: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 900;
+    color: aliceblue;
+    font-size: 15px;
+}
+button:hover{
+    background-color: greenyellow;
+    color: black;
+    transition: 1s;
+
+}
+#r1{
+color:greenyellow ;
+text-align: center;
+font-size: 40px;
+
+}   
+#r2{
+    color:rgb(178, 243, 205) ;
+text-align: center;
+font-size: 25px;
+} 
+#r3{
+    color:rgb(250, 0, 0) ;
+text-align: center;
+font-size: 40px;
+}
+.imgcon{
+    text-align: center;
+}
+.imgcon img{
+    height: 120px;
+    width: 120px;
+    border-radius: 25%;
+}
+h1::first-letter{
+    color: orange;
+    font-style: oblique;
+}
+h1>span{
+    color: rgb(170, 212, 152);
+    font-style: oblique;
+    
+}
+
+</style>
+
+<script>
+    function aggregrate() {
+
+
+
+
+        let Student=document.getElementById("name").value;
+        let m1=document.getElementById("m1").value;
+        let m2=document.getElementById("m2").value;
+        let m3=document.getElementById("m3").value;
+        let m4=document.getElementById("m4").value;
+        let m5=document.getElementById("m5").value;
+        console.log(Student,m1,m2,m3,m4,m5);
+        let resultMessage1= "";
+        let gradeMessage = "";
+       let resultMessage="";
+        if (m1<35||m2<35||m3<35||m4<35||m5<35) {
+resultMessage1="SORRY!! BROTHER YOU ARE FAILED BUT DONT LOOSE HOPE TRY AGAIN";
+        }
+        else{
+           resultMessage="Congratulations "+Student+" You are Passed!!!";
+            let totalMarks = Number(m1) + Number(m2) +Number( m3) + Number(m4) + Number(m5);
+            let per = (totalMarks / 500) * 100;
+            
+           console.log(per);
+           
+            if (per>90){
+       gradeMessage="Passed With a Brilliant Percentage of = "+per+"% You got A+ Grade Great!";
+            }
+            else if (per>=80 && per<90) {
+                gradeMessage="Passed With a Good Percentage of = "+per+"% You got A Grade Nice!";
+                
+            }
+            else if (per>=70 && per<80) {
+                gradeMessage="Passed With a Average Percentage of = "+per+"% You got B Grade Its Ok Try Hard!";
+            }
+            else if (per>=60 && per<50) {
+                gradeMessage="Passed With Below Average Percentage of = "+per+"% You got C Grade !";
+            }
+            else{
+                gradeMessage="Passed With Poor Percentage of = "+per+"% You got D Grade!";
+                
+            }
+        }
+        document.getElementById('r3').innerHTML=resultMessage1;
+document.getElementById('r1').innerHTML=resultMessage;
+document.getElementById('r2').innerHTML=gradeMessage;
+
+    }
+   
+</script>
+
+
+</head>
+<body>
+<header>
+    <h1>J<span>spiders</span> Student Portal</h1>
+</header>
+<div class="imgcon"><img src="logojspider.jpeg" alt="">
+</div>
+
+<div class="formcontainer">
+    <form action="" onsubmit="aggregrate()">
+     <table>
+    <tr>
+        <td> <label for="name">Enter Students Name:</label> </td>
+        <td><input type="text" id="name" placeholder="Enter Student's Name" required></td>
+    </tr>
+        <tr>
+            <td><label for="m1">Enter the Mark of Subject 1(Maths):</label></td>
+            <td><input type="number" id="m1"  placeholder="Enter Marks Out of 100" maxlength="3" required></td>
+        </tr>
+        <tr>
+            <td><label for="m2">Enter the Mark of Subject 2(Algorithms):</label></td>
+            <td><input type="number" id="m2"  placeholder="Enter Marks Out of 100" required></td>
+        </tr>
+        <tr>
+            <td><label for="m3">Enter the Mark of Subject 3(Cyber Security):</label></td>
+            <td><input type="number" id="m3"  placeholder="Enter Marks Out of 100" required></td>
+        </tr>
+        <tr>
+            <td><label for="m4">Enter the Mark of Subject 4(Data Science):</label></td>
+            <td><input type="number" id="m4"  placeholder="Enter Marks Out of 100" required></td>
+        </tr>
+        <tr>
+            <td><label for="m5">Enter the Mark of Subject 5(React.js):</label></td>
+            <td><input type="number" id="m5"  placeholder="Enter Marks Out of 100" required></td>
+    </tr>
+    
+   
+
+
+     </table>
+     <button type="button" onclick="aggregrate()">Submit</button>
+    </form>
+</div>
+
+<p id="r1"></p>
+<p id="r2"></p>
+<p id="r3"></p>
+
+    
+</body>
+</html>

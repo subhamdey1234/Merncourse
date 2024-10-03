@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 500px;
+            display: grid;
+            grid-template-columns:repeat(2,auto);
+            grid-template-rows: repeat(3,auto);
+                       gap: 20px;
+
+
+        }
+        .childs{
+            background-color: blue;
+            color: aliceblue;
+            font-weight: 900;
+            
+        }
+        .three{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start:1;
+            grid-row-end:3;
+        }
+        .four{
+            grid-column-start:1 ;
+            grid-column-end:3 ;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .six{
+            grid-column-start:2 ;
+            grid-column-end:4 ;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="childs one">One</div>
+    <div class="childs two">two</div>
+    <div class="childs three">Three</div>
+    <div class="childs four">Four</div>
+    <div class="childs five">Five</div>
+    <div class="childs six">Six</div>
+    <div class="childs seven">Seven</div>
+
+
+
+    </div>
+
+
+</body>
+</html>

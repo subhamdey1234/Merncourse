@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+
+    function withdrawl(amt) {
+        var bal=Number(prompt("Enter the total balance of Bank account"));
+        if(bal==0){
+console.log("Please enter the valid amount should be more than 0");
+    }
+    else if(amt<=bal)
+    {
+        console.log("Withdraw Successful");
+        bal=bal-amt;
+        console.log("collect the cash---->"+amt);
+        console.log("remaining balance="+bal);
+    
+    }
+    else{
+        console.log("insufficient balance please update");
+
+    }
+    }
+    withdrawl(prompt("Enter the Amount to Withdraw"));
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

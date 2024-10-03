@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        ob();
+        function ob() {
+            const person={
+                name:"Subham Dey",
+                age:22,
+                mob:9777837744,
+                email:"sdey06384@gmail.com"
+            }
+            let info=prompt("Enter the Key to Be Searched");//type string 
+            if (person[info]) {
+                console.log(`Searched Value = ${person[info]}`); //dynamic accessing of elements from person object
+                
+            }
+            else{
+                console.log("Invalid Search");
+                
+            }
+        }
+   
+      
+       
+
+
+const personss = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+document.getElementById("demo").innerHTML = personss.fullName();
+
+    </script>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="batchandcollege"></p>
+</body>
+</html>

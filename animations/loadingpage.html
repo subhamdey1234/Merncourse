@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/fontawesome/fontawesomecss/css/all.css">
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 300px;
+        }
+        .child{
+            background-color: blue;
+            height: 40px;
+            width: 40px;
+border-radius:50%;
+animation: loading 0.5s linear 0s infinite alternate ;
+        }
+        .one{
+            background-color: red;
+            animation-duration: 0.9s;
+            animation-delay: 1.5s;
+           
+        }
+        .two{
+            background-color: rgb(115, 255, 0);
+            animation-duration: 0.9s;
+            animation-delay: 1s;
+        }
+        .three{
+            background-color: yellowgreen;
+            animation-duration: 0.9s;
+            animation-delay: 0.5s;
+        }
+        .four{
+            background-color: aqua;
+            animation-duration: 0.9s;
+            animation-delay: 0.6s;
+        }
+        .five{
+            background-color: blueviolet;
+            animation-duration: 0.9s;
+            animation-delay: 0.3s;
+        }
+        .six{
+            background-color: cadetblue;
+            animation-duration: 0.9s;
+            animation-delay: 0.1s;
+        }
+        @keyframes loading {
+            0%{
+                transform: scale(1.5);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        .child i{
+            color: rgb(53, 33, 33);
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(0, 0, 0);">
+    <div class="container">
+        <div class="child one"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        <div class="child two"><i class="fa-solid fa-fingerprint"></i></div>
+        <div class="child three"><i class="fa-solid fa-fingerprint"></i></div>
+        <div class="child four"><i class="fa-solid fa-fingerprint"></i></div>
+        <div class="child five"><i class="fa-solid fa-fingerprint"></i></div>
+        <div class="child six"><i class="fa-solid fa-fingerprint"></i></div>
+        <div class="child seven"><i class="fa-solid fa-fingerprint"></i></div>
+    </div>
+    
+</body>
+</html>

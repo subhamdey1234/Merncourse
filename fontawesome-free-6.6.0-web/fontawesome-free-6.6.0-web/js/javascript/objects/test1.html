@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function studentdetais(id,name) {
+            let insname="Jspiders";
+            var branch="Marathalli";
+            const course="MERN";
+
+            function printdetails() {  ///function declaration is used...
+            
+            console.log(`Student Name ${name}, Institute Name ${insname}`);
+            
+        }
+        printdetails();
+        let welcomemsg=function(){ ///function expression is used.
+            console.log(`Hey ${name} , Welcome to ${insname} , branch ${branch}`);
+            
+        }
+        welcomemsg();
+        var greetmsg=()=>{   ///Arrow Function is Used.
+            let msg="Good Evening";
+            console.log(`${name},${msg}`);
+            
+        }
+        greetmsg();
+        }
+        
+        
+        
+        studentdetais(101,"SUBHAM DEY");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

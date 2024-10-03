@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function prime(n) {
+            if(n<2)
+        {
+            return false;
+        }
+        for(let i=2;i<=Math.trunc(n/2);i++)
+        {
+            if (n%i==0) {
+                return false;
+            }
+
+        }
+        return true;
+        }
+
+        var ul=Number(prompt("Enter the upper limit"));
+        var ll=Number(prompt("Enter the lower limit"));
+        var c=0;
+        for(let i=ll;i<=ul;i++)
+        {
+
+         if(prime(i))
+         {
+c++;
+if (c%2==0) {
+    console.log(`${i}`);
+}
+ }
+        }
+lastthreeprimenumber(ul,ll);
+
+   function lastthreeprimenumber(ul,ll)
+   {
+    let c=0;
+    console.log("Last three prime numbers ==>");
+    
+    for(let i=ul;i>=ll;i--)
+   {
+if (prime(i)) {
+    c++;
+    if (c<=3) {
+        console.log(i);
+        
+    }
+}
+   }
+   } 
+
+   Firstthreeprimenumber(ul,ll);
+   function Firstthreeprimenumber(ul,ll)
+   {
+    let c=0;
+    console.log("First three prime numbers ==>");
+    
+    for(let i=ll;i<=ul;i++)
+   {
+if (prime(i)) {
+    c++;
+    if (c<=3) {
+        console.log(i);
+        
+    }
+}
+   }
+   }
+   secondheightstprime(ul,ll);
+function secondheightstprime(ul,ll) {
+    let c=0;
+    console.log("second Heighest prime numbers ==>");
+    
+    for(let i=ul;i>=ll;i--)
+   {
+if (prime(i)) {
+    c++;
+    
+    if (c==2) {
+        console.log(i);
+        break;
+        
+    }
+}
+   }
+}
+
+secondlowestprime(ul,ll);
+function secondlowestprime(ul,ll) {
+    let c=0;
+    console.log("second Lowest prime numbers ==>");
+    
+    for(let i=ll;i<=ul;i++)
+   {
+if (prime(i)) {
+    c++;
+    
+    if (c==2) {
+        console.log(i);
+        break;
+        
+    }
+}
+   }
+}
+var st=+prompt("Enter the Lucky Number");
+nextprimenumber(st);
+function nextprimenumber(n) {
+    console.log("THE Next prime number=>");
+    
+    for(let i=n;   ;i++){
+    if (prime(i)) {
+        console.log(i);
+        break;
+    }  
+}
+}
+
+prevprimenumber(st);
+function prevprimenumber(n) {
+    console.log("THE previous prime number=>");
+    
+    for(let i=n;   ;i--){
+    if (prime(i)) {
+        console.log(i);
+        break;
+    }  
+}
+}
+
+
+ 
+   
+   
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

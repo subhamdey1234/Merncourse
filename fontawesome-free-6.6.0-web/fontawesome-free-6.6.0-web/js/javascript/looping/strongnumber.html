@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function factorial(n) {
+            let f=1;
+            for(let i=1;i<=n;i++){
+            f=f*i;
+        }
+        return f;
+        }
+        function strongnumber(n) {
+            let temp=n;
+            let sum=0;
+            while(n>0)
+        {
+            let r=n%10;
+            sum+=factorial(r);
+            temp=Math.trunc(temp/10);
+        }
+        if (n==sum) {
+            console.log(n+" is a Strong Number");
+            
+        }
+        else{
+            console.log(n+" is not a Strong Number");
+ 
+        }
+        }
+        strongnumber(Number(prompt("enter the number-->")));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

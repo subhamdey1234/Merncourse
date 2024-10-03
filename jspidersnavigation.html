@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/fontawesome/fontawesomecss/css/all.css">
+<style>
+    body{
+        background-color: #080a0a;
+    }
+    h1::first-letter{
+   color: orange;   
+
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-image:linear-gradient(100deg,rgb(59, 59, 73),rgb(49, 57, 86),rgb(62, 74, 91));
+        padding: 8px 0px;height: 100px;
+        border-radius: 20px;
+    }
+    h1,span{
+        font-size: 30px;
+        color: aliceblue;
+
+    }
+    span{
+        margin-top: -30px;
+    }
+    a{
+        margin-left: 30px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 900;
+        text-decoration: none;
+        margin-right: 10px;
+        font-size: 25px;
+        color: aliceblue;
+    }
+    h1{
+        margin-left: 5px;
+    font-size: 40px;
+    margin-top: 8px;
+    margin-bottom: -2px;
+    }
+    span{
+        margin-left: 5px;
+    }
+    a:hover{
+        color: orange;
+        transition: 1s;
+
+    }
+    
+    i{
+        color: aliceblue;
+        font-size: 25px;
+        margin-right: 5px;
+
+    }
+  a i:hover{
+        color: orange;
+        transition: 0.6s;
+    }
+    #link1{
+        text-decoration: solid;
+        
+        background-color: rgb(45, 59, 45);
+        margin-left: 3px;
+        font-size: medium;
+
+    }
+    #link2{
+        text-decoration: solid;
+        
+        background-color: rgba(72, 74, 19, 0.781);
+        margin-left: 0px;
+        font-size:medium;
+
+    }
+    #link3{
+        text-decoration: solid;
+       
+        background-color: rgb(92, 108, 250);
+        margin-left: 0px;
+        font-size: medium;
+
+    }
+    #link4{
+        text-decoration: solid;
+       
+        background-color: rgb(92, 95, 47);
+        margin-left: 0px;
+        font-size: medium;
+
+    }
+    #link5{
+        text-decoration: solid;
+       
+        background-color: rgb(67, 38, 50);
+        margin-left: 0px;
+        font-size: medium;
+
+    }
+    #link6{
+        text-decoration: solid;
+       
+        background-color: rgb(33, 70, 56);
+        margin-left: 0px;
+        font-size: medium;
+
+    }
+    #link7{
+        text-decoration: solid;
+       
+        background-color: rgb(3, 52, 78);
+        margin-left: 0px;
+        font-size: medium;
+
+    }
+    #link8{
+        text-decoration: solid;
+       
+        background-color: rgba(16, 16, 156, 0.636);
+        margin-left: 0px;
+        font-size: medium;
+
+    }
+    #link9{
+        text-decoration: solid;
+        
+        background-color: rgb(7, 83, 74);
+        margin-left: 0px;
+        font-size: medium;
+
+    }
+    #link10{
+        text-decoration: solid;
+        
+        background-color: blue;
+        margin-left: 0px;
+        font-size: medium;
+
+    }
+    #link11{
+        text-decoration: solid;
+      color: aliceblue;
+        background-color: rgb(40, 248, 44); font-size: medium;
+        margin-left: 0px;
+
+
+    }
+    #link12{
+        text-decoration: solid;
+        
+        background-color: rgb(255, 108, 228);
+        margin-left: 0px;
+        font-size: medium;
+
+    }
+    #link13{
+        text-decoration: solid;
+        
+        background-color: rgb(184, 31, 255);
+        margin-left: 0px;
+        font-size: medium;
+
+    }
+    #link14{
+      
+        background-color: rgb(6, 79, 41);
+        margin-left: 0px;
+        font-size: medium;
+
+    }
+    #link15{
+        text-decoration: solid;
+       
+        background-color: rgb(230, 39, 46);
+        margin-left: 0px;
+        font-size: medium;
+
+    }
+    #link16{
+        text-decoration: solid;
+       
+        background-color: rgb(245, 131, 32);
+        margin-left: 0px;
+        font-size: medium;
+    }
+
+    .cone{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+.two{
+    margin:0px;
+    color: aliceblue;
+}
+.two i{
+    font-size: 15px;
+    margin-left: 1px;
+}   
+.firstsec{
+    flex-wrap: nowrap;
+    display: flex;
+    
+    
+} 
+.firstsec>#firstsection{
+background-image: linear-gradient(100deg,rgb(108, 108, 154),rgb(137, 153, 213),rgb(62, 74, 91));
+    background-repeat: no-repeat;
+background-size: cover;
+width: 1500px;
+height: 360px;
+box-shadow: 0px 0px 20px rgb(33, 28, 28);
+border-radius: 18px;
+margin-left: 10px;
+}
+.threechild{
+    margin-left: 10px;
+    
+}    
+#firstsection>p{
+color: orange;
+font-weight: 900;
+text-decoration: underline;
+font-size: larger;
+text-align: center;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+margin-top: 3px;
+
+}
+#firstsection>p>i{
+    font-size: medium;
+    margin-left: 5px;
+    color: orange;
+}
+.threechild>#p1{
+    color: aliceblue;
+    font-weight: 600;
+    text-decoration: none;
+  text-align: justify;
+  text-justify: newspaper;
+  font-size: medium;
+margin-left: 12px ;
+margin-right: 12px;
+}
+.threechild>#p2{
+    color: aliceblue;
+    font-weight: 600;
+    text-decoration: none;
+  text-align: justify;
+  text-justify: newspaper;
+  font-size: medium;
+margin-left: 12px ;
+margin-right: 12px;
+}
+.threechild>#p3{
+    color: aliceblue;
+    font-weight: 600;
+    text-decoration: none;
+  text-align: justify;
+  text-justify: newspaper;
+  font-size: medium;
+margin-left: 12px ;
+margin-right: 12px;
+font-style: oblique;
+}
+.secondsec{
+    display: flex;
+    flex-wrap: wrap;
+}
+.multiple{
+    margin-left: 25px;
+    margin-right: 12px;
+    margin-top: 18px;
+    border: 2px solid transparent;
+    height: 150px;
+    box-shadow: 0px 0px 20px rgb(221, 239, 223);
+    border-radius: 15px;
+}
+.multiple h2{
+    text-align: center;
+    background-color: rgb(241, 231, 223);
+    color: orange;
+ margin: 0px -1px;
+    padding: 20px;
+}
+.multiple>p{
+    margin: -7px 23px;
+    text-align: center;
+    color: #e0e0e0;
+    
+    width: 160px;
+}
+.multiple i{
+    color: orange;
+}
+#secondsection i{
+    font-size: medium;
+    margin-left: 5px;
+    color: orange;
+
+}
+#secondsection>p{
+    color: orange;
+font-weight: 900;
+text-decoration: underline;
+font-size: larger;
+text-align: center;
+margin-top: 3px;
+width: 500px;
+font-size: x-large;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+#secondsection{
+    border-radius: 18px;
+    width: 700px;
+    box-shadow: 0px 0px 20px rgb(41, 40, 40);
+    background-image: linear-gradient(100deg,rgb(93, 78, 51),rgb(111, 89, 36),rgb(74, 155, 74));
+}
+.container2{
+    width: 500px;
+    margin: 20px auto;
+    
+}
+
+.section {
+    margin-bottom: 15px;
+}
+
+.label {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #e0e0e0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: linear-gradient(100deg,green,rgb(50, 205, 202));
+}
+
+.bar {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+.fill {
+    height: 100%;
+    background-color: #ffc107; 
+    border-radius: 5px;
+}
+#trdsection{
+width: 540px;
+height: 360px;
+box-shadow: 0px 0px 20px rgb(32, 29, 29);
+border-radius: 18px;
+}
+#trdsection>p{
+    text-align: center;
+    font-size: x-large;
+    color: #ffc107;
+    text-decoration: underline;
+font-weight: 900;
+margin-top: 3px;
+width: 500px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+margin-left: 40px;
+}
+
+#trdsection>p>i{
+    text-align: center;
+    font-size: x-large;
+    color: #ffc107;
+   
+}
+#trdsection>.student b{
+    text-align: center;
+    background-color: rgb(73, 32, 32);
+    padding: 6px 191px 0px 190px;
+    border-radius:10px;
+    color: aliceblue;
+    text-align: center;
+    margin-right: 50px;
+    margin: 19px 20px;
+    
+}
+#trdsection{
+    background-image: linear-gradient(50deg,rgb(72, 69, 63),rgb(145, 149, 238),rgb(167, 171, 150));
+
+
+}
+#trdsection span{
+    margin-left: 30px;
+    
+}
+.c3{
+    display: flex;
+gap: 2px;
+}
+.c3>.cs{
+    background-color: rgb(27, 56, 222);
+margin-top: 9px;
+width: 100px;
+border-radius: 10px;
+margin-bottom: 9px;
+font-size: medium;
+
+
+}
+.cs a{
+    color: #efffff;
+}
+
+.c3>.cs:hover{
+    background-color: #ffc107;
+    
+    font-weight: 900;
+    transition: 1s;
+}
+
+
+.c3>.cs>a{
+    text-align: center;
+    
+}
+.c3>.cs>a:hover{
+    color: #080a0a;
+    text-align: center;
+    transition: 1s;
+}
+.c4{
+    display: flex;
+    gap: 3px;
+    margin-bottom: 0px;
+}
+.cs1{
+    text-align: center;
+    background-color:rgb(27, 56, 222) ;
+margin-top: 9px;
+width: 200px;
+border-radius: 9px;
+margin-bottom: 20px;
+margin-left: 50px;
+}
+.cs1>a{
+font-size: large;
+margin-top: 0px;
+
+}
+.cs1:hover{
+    background-color: #ffc107;
+    transition: 1s;
+
+}
+.cs2>a{
+    font-size: large;
+    color: #f3ffff;
+}
+.cs1>a:hover{
+    color: #080a0a;
+    transition: 1s;
+}
+.cs1 a{
+    color: #d8e9e9;
+}
+.c5{
+    display: flex;
+    gap: 20px;
+}
+.cs2{
+    text-align: center;
+    background-color: rgb(27, 56, 222);
+margin-top: 20px;
+width: 200px;
+border-radius: 10px;
+margin-bottom: 20px;
+margin-left: 40px;
+}
+.c5>.cs2{
+    background-color: rgb(27, 56, 222);
+margin-top: 9px;
+width: 200px;
+border-radius: 2px;
+margin-bottom: 9px;
+
+}
+.c5>.cs2:hover{
+background-color: #ffc107;
+transition: 1s;
+}
+.c5>.cs2>a{
+    color: #eaffff;
+}
+.c5>.cs2>a:hover{
+    color: #080a0a;
+    transition: all;
+
+}
+
+
+</style>
+</head>
+<body>
+    <nav class="container">
+<div class="child"><h1>Jspiders</h1><span>training & development center</span></div>
+<div class="child">
+<a href="http://"><i class="fa-solid fa-house"></i> Home</a>
+<a href="http://"><i class="fa-solid fa-users"></i>Placements</a>
+<a href="http://"><i class="fa-solid fa-book"></i>Courses</a>
+<a href="http://"><i class="fa-solid fa-briefcase"></i>Corporate</a>
+<a href="http://"><i class="fa-solid fa-phone"></i>Contacts</a>
+<a href="http://"><i class="fa-solid fa-calendar-days"></i>Batches</a>
+
+
+</div>
+    </nav>
+    <nav class="cone">
+        <div class="ch">
+          <a class="two" id="link1" href="">Global<i class="fa-solid fa-caret-down"></i></a>
+          <a class="two"  id="link2" href="">Online<i class="fa-solid fa-caret-down"></i></a>
+          <a class="two"  id="link3" href="">Karnataka<i class="fa-solid fa-caret-down"></i></a>
+          <a class="two"  id="link4" href="">Maharashtra<i class="fa-solid fa-caret-down"></i></a>
+          <a class="two"  id="link5" href="">TamilNadu<i class="fa-solid fa-caret-down"></i></a>
+          <a class="two"  id="link6" href="">Telangana<i class="fa-solid fa-caret-down"></i></a>
+          <a class="two"  id="link7"  href="">Andhra pradesh<i class="fa-solid fa-caret-down"></i></a>
+          <a class="two"  id="link8" href="">Madhya Pradesh<i class="fa-solid fa-caret-down"></i></a>
+          <a class="two"  id="link9" href="">Chandigarh<i class="fa-solid fa-caret-down"></i></a>
+          <a class="two"  id="link10" href="">Haryana<i class="fa-solid fa-caret-down"></i></a>
+          <a class="two"  id="link11" href="">Odisha<i class="fa-solid fa-caret-down"></i></a>
+          <a class="two"  id="link12" href="">Uttar Pradesh<i class="fa-solid fa-caret-down"></i></a>
+          <a class="two"  id="link13" href="">West Bengal<i class="fa-solid fa-caret-down"></i></a>
+          <a class="two"   id="link14" href="">New Delhi<i class="fa-solid fa-caret-down"></i></a>
+          <a class="two"  id="link15" href="">Gujarat<i class="fa-solid fa-caret-down"></i></a>
+          <a class="two"  id="link16" href="">Kerala<i class="fa-solid fa-caret-down"></i></a>
+
+        </div>
+    </nav>
+
+
+   <div class="firstsec">
+<div id="firstsection" class="threechild"><p><i class="fa-solid fa-earth-americas"></i>Largest Software Training Organisation<i class="fa-solid fa-earth-americas"></i></p> <br>  <p class="para1" id="p1">QSpiders is the world’s ace software training organization with an aim to bridge the gap between the demands of the industry and the curriculum of educational institutions.</p> <p id="p2">With centers across the Globe, the institute is a platform where young minds are given the opportunity to build successful careers.</p> <p id="p3">”QSpiders is a place where businesses find talent and dreams take flight."</p></div>
+<div id="secondsection" class="threechild"><p><i class="fa-solid fa-users"></i>Placement Statistics<i class="fa-solid fa-users"></i></p><br>
+
+    <div class="container2">
+        <div class="section">
+            <div class="label"><i class="fa-solid fa-arrow-up-wide-short">94860</i> Placed Students who have throughout 60%</div>
+            <div class="bar">
+                <div class="fill" style="width: 80%;"></div> 
+            </div>
+        </div>
+        <div class="section">
+            <div class="label"><i class="fa-solid fa-arrow-up-wide-short">42992</i> Placed Students who have graduated in Non-IT</div>
+            <div class="bar">
+                <div class="fill" style="width: 60%;"></div> 
+            </div>
+        </div>
+        <div class="section">
+            <div class="label"><i class="fa-solid fa-arrow-up-wide-short">68481</i> Placed Students who have graduated in IT/CS/IS</div>
+            <div class="bar">
+                <div class="fill" style="width: 90%;"></div> 
+            </div>
+        </div>
+        <div class="section">
+            <div class="label"><i class="fa-solid fa-arrow-up-wide-short">15052</i> Placed Students who have less than 60% aggregate in Degree</div>
+            <div class="bar">
+                <div class="fill" style="width: 30%;"></div> 
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="threechild" id="trdsection"><p><i class="fa-solid fa-users"></i>Placed Students<i class="fa-solid fa-users"></i></p> <br>
+<span class="student"><b>Year</b></span>
+<br>
+<div class="c3">
+    <div class="cs"><a href="">2024</a></div>
+    <div class="cs"><a href="">2023</a></div>
+    <div class="cs"><a href="">2022</a></div>
+    <div class="cs"><a href="">2021</a></div>
+    <div class="cs"><a href="">2020</a></div>
+</div>
+
+<span class="student"><b>Degree</b></span>
+<div class="c4">
+<div class="cs1"><a href="">BE/BTECH</a></div>
+<div class="cs1"><a href="">BSC/BCA</a></div>
+</div>
+
+<span class="student"><b>Masters</b></span>
+<div class="c5">
+<div class="cs2"><a href="">ME/MTECH</a></div>
+<div class="cs2"><a href="">MSC/MCA</a></div>
+</div>
+
+</div>
+   </div> 
+<div class="secondsec">
+    <div class="multiple"><h2><i class="fa-solid fa-star"></i>No.1<i class="fa-solid fa-star"></i></h2><br>
+    <p>Training Center in the World and also the Largest.</p>
+    </div>
+    <div class="multiple"><h2><i class="fa-solid fa-star"></i>2.51 Lakhs<i class="fa-solid fa-star"></i></h2><br>    <p>Students have been Placed, and still counting!</p>
+    </div>
+    <div class="multiple"><h2><i class="fa-solid fa-star"></i>4870+<i class="fa-solid fa-star"></i></h2><br>    <p>Multinational companies hire from us, and the list is still growing.</p>
+    </div>
+    <div class="multiple"><h2><i class="fa-solid fa-star"></i>27-32<i class="fa-solid fa-star"></i></h2><br>    <p>Companies conduct interviews every working day.</p>
+    </div>
+    <div class="multiple"><h2><i class="fa-solid fa-star"></i>2000-3000<i class="fa-solid fa-star"></i></h2> <br>    <p>Students attend interviews every day across companies.</p>
+    </div>
+    <div class="multiple"><h2><i class="fa-solid fa-star"></i>4000-6000<i class="fa-solid fa-star"></i></h2><br>     <p>Students get placed in a Month across the Globe.</p>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

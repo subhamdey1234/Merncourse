@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function arm(n) {
+            let t=n;
+            let n1=String(n);
+            let numberOfDigits=n1.length;
+            let sum=0;
+            while(n>0)
+        {
+            let r=n%10;
+           sum+=Math.pow(r,numberOfDigits);
+           n=Math.trunc(n/10);
+        }
+        return sum==t;
+        }
+   
+     function firstthreearm(st,en) {
+   
+   let c=0;   
+     for(let i=st;i<=en;i++)
+     {
+          
+         if (arm(i)) {
+            c++;
+            console.log(i);
+            if(c==3)
+            break;
+        }
+     }
+     }
+     firstthreearm(+(prompt("Enter the Starting number")),+(prompt("Enter the Ending Number")));    
+
+    
+     
+     function lastthreearm(st,en) {
+   
+   let c=0;   
+     for(let i=en;i>=st;i--)
+     {
+          
+         if (arm(i)) {
+            c++;
+            console.log(i);
+            if(c==3)
+            break;
+        }
+     }
+     }
+     lastthreearm(+(prompt("Enter the Starting number")),+(prompt("Enter the Ending Number")));    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

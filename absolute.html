@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute position</title>
+    <style>
+        .c{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-color: burlywood;
+            position:absolute;
+            top: 50px;
+        }
+        .p{
+            height: 100px;
+            width: 100px;
+            border: 2px solid rgb(26, 137, 255);
+            padding: 50px;
+            background-color: blue;
+position: relative;
+
+        }
+        .gp{
+            height: 100px;
+            width: 100px;
+            border: 2px solid rgb(26, 137, 255);
+            padding: 108px 254px 232px 132px;
+            background-color: yellowgreen;
+        }
+        </style>
+</head>
+<body>
+    <div class="gp">
+        <div class="p">
+            <div class="c"></div>
+        </div>
+    </div>
+</body>
+</html>

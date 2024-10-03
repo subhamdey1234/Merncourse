@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pattern1() {
+          let row=5;
+          let col=5;
+          let str="";
+            for(let i=0;i<10;i++)
+        {
+            
+            for(let j=0;j<10;j++)
+        {
+            str+="*";
+
+          
+        }
+        str=str+"\n";
+        }
+        console.log(str);
+        
+
+        }
+        pattern1();
+        function pattern2() {
+           let str="";
+
+            for(let i=0;i<10;i++)
+        {
+            for(let j=0;j<10;j++)
+        {
+            if (i==0||j==0||i==9||j==9) {
+                str=str+"*";
+            }
+            else{
+                str=str+" ";
+            }
+
+        }
+        str=str+"\n";
+        }
+        console.log(str);
+        
+        }
+        pattern2();
+        function pattern3() {
+            let str="";
+            for(let i=1;i<=10;i++)
+        {
+            
+            for(let j=1;j<=i;j++)
+        {
+ str=str+"*";
+
+
+        }
+        str=str+"\n";
+        }
+console.log(str);
+
+        }
+        pattern3();
+        function pattern4() {
+            let str="";
+            for(let i=1;i<=10;i++)
+        {
+            for(let j=10;j>=i;j--)
+        {
+    str+="*";
+        }
+        str=str+"\n";
+        }
+console.log(str);
+
+        }
+        pattern4();
+
+function pattern5() {
+    let str="";
+    for(let i=1;i<=10;i++){
+    for(let j=1;j<=10;j++)
+    {
+        if (i==10 || j==5) {
+            str+="*";
+        }
+        else{
+            str+=" ";
+        }
+    }
+    str=str+"\n";
+}
+console.log(str);
+
+}
+pattern5();
+
+function pattern6()
+{
+    let str="";
+    for(let i=1;i<=10;i++)
+{
+    for(let j=1;j<=10;j++)
+{
+    if(i==1||j==1||i==10||j==10||j==5)
+{
+    str+="*";
+}
+else{
+    str+=" ";
+}
+
+}
+str+="\n";
+}
+console.log(str);
+
+}
+pattern6();
+
+function pattern7()
+    {
+        let s="";
+        for(let i=5;i>=1;i--)
+    {
+        for(let j=i;j<=5;j++)
+    {
+        s+=j;
+    }
+    s+='\n';
+    }
+console.log(s);
+
+    }
+    pattern7();
+    function pattern8()
+    {
+        let s="";
+        let n=5
+        for(let i=1;i<=n;i--)
+    {
+        for(let j=1;j<=n;j++)
+    {
+        s+=" ";
+    }
+    for(let j=i;j>=1;j--)
+    {
+        s+=j;
+    }
+    s+='\n';
+    }
+console.log(s);
+
+    }pattern8();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

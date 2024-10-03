@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fibo() {
+            let a=0;
+            let b=1;
+            let c=0;
+           
+     
+ let ul=Number(prompt("Enter the upperlimit"));
+ let ll=Number(prompt("Enter the lower limit"));           
+ if (ll==0) {
+                console.log(a);
+            }
+            
+                   
+ for(;;)
+{
+ c=a+b;
+ if (c>ul) {
+    break;
+ }
+ if (c>=ll) {
+    console.log(c);
+ }
+ a=b;
+ b=c;
+   }
+            
+        }
+        fibo();
+        function sum(n) {
+            let sum=0;
+            while (n>0) {
+                let digit=n%10;
+                sum+=digit;
+                n=Math.trunc(n/10);
+            }
+            console.log(sum);
+            
+        }
+        sum(Number(prompt("enter the number")));
+function digitscount(n) {
+    let c=0;
+            while (n>0) {
+                let digit=n%10;
+                c++
+                n=Math.trunc(n/10);
+            }
+            console.log("Number of digits=> "+c);
+}
+digitscount(Number(prompt("enter the number--->")))
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practise</title>
+    <style>
+.container{
+    border: 2px solid black;
+    display: grid;
+    height: 500px;
+    gap: 20px;
+grid-template-columns: repeat(2,auto);
+grid-template-rows: repeat(3,auto);
+}
+.child{
+background-color: blue;
+}
+.one{
+grid-row-start:1;
+grid-row-end: 3;
+grid-column-start: 1;
+grid-column-end:2 ;
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRncVL72sm3a5_8RKIYAC2p1gq7AijfzYW4DA&s");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius:5px;
+}
+.two{
+    grid-row-start:1;
+grid-row-end: 3;
+grid-column-start: 2;
+grid-column-end:3 ;
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRncVL72sm3a5_8RKIYAC2p1gq7AijfzYW4DA&s");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius:5px;
+}
+.three{
+    grid-row-start:1;
+grid-row-end: 2;
+grid-column-start:3;
+grid-column-end:5 ;
+background-image: url("./images/clothes.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius:5px;
+}
+.six{
+    grid-row-start:3;
+grid-row-end: 4;
+grid-column-start: 1;
+grid-column-end:3 ;
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRncVL72sm3a5_8RKIYAC2p1gq7AijfzYW4DA&s");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius:5px;
+}
+.seven{
+    grid-row-start:3;
+grid-row-end: 4;
+grid-column-start: 3;
+grid-column-end:5 ;
+background-image: url("images/toys.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius:5px;
+}
+.eight{
+    grid-row-start:4;
+grid-row-end: 5;
+grid-column-start: 1;
+grid-column-end:2 ;
+background-image: url("./images/bikes.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius:5px;
+}
+.nine{
+    grid-row-start:4;
+grid-row-end: 5;
+grid-column-start: 2;
+grid-column-end:4 ;
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRncVL72sm3a5_8RKIYAC2p1gq7AijfzYW4DA&s");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius:5px;
+}
+.four{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRncVL72sm3a5_8RKIYAC2p1gq7AijfzYW4DA&s");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius:5px;
+}
+.five{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRncVL72sm3a5_8RKIYAC2p1gq7AijfzYW4DA&s");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius:5px;
+}
+.ten{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRncVL72sm3a5_8RKIYAC2p1gq7AijfzYW4DA&s");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius:5px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child one"></div>
+        <div class="child two"></div>
+        <div class="child three"></div>
+        <div class="child four"></div>
+        <div class="child five"></div>
+        <div class="child six"></div>
+        <div class="child seven"></div>
+        <div class="child eight"></div>
+        <div class="child nine"></div>
+        <div class="child ten"></div>
+    </div>
+
+
+
+</body>
+</html>

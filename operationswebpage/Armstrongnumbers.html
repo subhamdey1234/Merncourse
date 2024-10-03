@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+     #one{
+            
+            color: aliceblue;
+            font-weight: 900;
+           font-size: 30px;
+        }
+        .one{
+            background-color: black;
+        margin-left: 400px;
+        margin-right: 300px;
+        }
+        h1{
+            text-align: center;
+        }
+        body{
+            background-image: linear-gradient(60deg,blue,green,yellow);
+        }
+      header  h1{
+         color: rgb(6, 4, 4);
+         font-size: 35px;
+         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         font-weight: 900;
+         text-decoration: underline solid rgb(31, 32, 29);
+        }
+
+        header button{
+            border: 1px solid black;
+            padding: 15px;
+            border-radius: 16px;
+            background-image: linear-gradient(40deg,yellow,green);
+            font-weight: 900;
+            cursor: pointer;
+        }
+        header{
+            text-align: center;
+        }
+        header button:hover{
+            background-image: linear-gradient(40deg,rgb(15, 15, 12),rgb(0, 255, 0)); 
+            color: aliceblue;
+            transition: 0.5s;
+        }   
+</style>
+<script>
+   function armstrong() {
+   let n= Number(prompt("Enter the Number for Armstrong"))   
+    let sum=0;
+        let org=n;
+        let n1=String(n);
+        let len=n1.length;
+        while (n>0) {
+            let digit=n%10;
+            n=Math.trunc(n/10);
+            sum+=Math.pow(digit,len);
+        }
+        if (sum==org) {
+            console.log("Armstrong");
+            alert("Congrats!!!  Its an Armstrong number")
+        }
+        else{
+            console.log("Not Armstrong");
+            alert("Not an Armstrong")
+        }
+       
+    }
+
+
+    function isArmstrongNumber(num) {
+        let sum = 0;
+        let temp = num;
+        const numberOfDigits = num.toString().length;
+    
+        while (temp > 0) {
+            let digit = temp % 10;
+            sum += Math.pow(digit, numberOfDigits);
+            temp = Math.floor(temp / 10);
+        }
+    
+        return sum === num;
+    }
+    
+    function displayArmstrongNumbers() {
+   let start=Number(prompt("Enter the Starting point"));
+   let end=Number(prompt("Enter the Ending point"));
+
+        for (let i = start; i <= end; i++) {
+            if (isArmstrongNumber(i)) {
+                console.log(i);
+                alert("the armstrong numbers are=>"+i);
+            }
+        }
+    }
+    
+    function firstthreearm() {
+   
+
+   let c=0;   
+   let st=+(prompt("Enter the Starting number"));
+   let en=+(prompt("Enter the Ending number"));
+        for(let i=st;i<=en;i++)
+             {
+                  
+                 if (isArmstrongNumber(i)) {
+                    c++;
+                    alert("the first three armstrong numbers=>"+i);
+                    console.log(i);
+                    
+                    if(c==3)
+              break;
+                }
+             }
+       }
+
+       function lastthreearm() {
+   
+
+   let c=0;   
+   let st=+(prompt("Enter the Starting number"));
+   let en=+(prompt("Enter the Ending number"));
+        for(let i=en;i>=st;i--)
+             {
+                  
+                 if (isArmstrongNumber(i)) {
+                    c++;
+                    alert("the first three armstrong numbers=>"+i);
+                    console.log(i);
+                    
+                    if(c==3)
+              break;
+                }
+             }
+       }
+
+       function nextarm() {
+       
+      let n= +(prompt("Enter the Lucky Number!!"));    
+   for(let i=n; ;i++)
+   {
+        
+       if (isArmstrongNumber(i)) {
+        alert("The Next Armstrong Number =>"+i);
+          console.log(i);
+          break;
+      }
+   }
+   }
+
+  
+   function prevarm() {
+       
+       let n= +(prompt("Enter the Lucky Number!!"));    
+    for(let i=n; ;i--)
+    {
+         
+        if (isArmstrongNumber(i)) {
+         alert("The Previous Armstrong Number =>"+i);
+           console.log(i);
+           break;
+       }
+    }
+    } 
+</script>
+</head>
+<body>
+    <header>
+        <h1>Armstrong Numbers Program</h1>
+        <a href="./lists.html"> <button>Go to Lists</button></a>
+
+    </header>
+    <div class="code">
+        <pre class="one">
+       <h1 onclick="armstrong();" style="text-align: center;color: rgb(127, 246, 0);text-decoration: underline;cursor: pointer;">Armstrong Number 1</h1>     
+<code id="one">
+    function armstrong(n) {
+        let sum=0;
+        let org=n;
+        let n1=String(n);
+        let len=n1.length;
+        while (n>0) {
+            let digit=n%10;
+            n=Math.trunc(n/10);
+            sum+=Math.pow(digit,len);
+        }
+        if (sum==org) {
+            console.log("Armstrong");
+            
+        }
+        else{
+            console.log("Not Armstrong");
+        }
+       
+    }
+ armstrong(Number(prompt("Enter the Number for Armstrong")));
+</code>
+
+<h1 onclick="displayArmstrongNumbers();" style="text-align: center;color: rgb(127, 246, 0);text-decoration: underline;cursor: pointer;">Range of Armstrong Number</h1>     
+<code id="one">
+    function isArmstrongNumber(num) {
+        let sum = 0;
+        let temp = num;
+        const numberOfDigits = num.toString().length;
+    
+        while (temp > 0) {
+            let digit = temp % 10;
+            sum += Math.pow(digit, numberOfDigits);
+            temp = Math.floor(temp / 10);
+        }
+    
+        return sum === num;
+    }
+    
+    function displayArmstrongNumbers(start, end) {
+        for (let i = start; i <= end; i++) {
+            if (isArmstrongNumber(i)) {
+                console.log(i);
+            }
+        }
+    }
+    
+    displayArmstrongNumbers(100, 1000);
+</code>
+
+      <h1 onclick="firstthreearm();" style="text-align: center;color: rgb(127, 246, 0);text-decoration: underline;cursor: pointer;">First Three Armstrong</h1>     
+      <code id="one">
+ function firstthreearm(st,en) {
+   
+    let c=0;   
+         for(let i=st;i<=en;i++)
+              {
+                   
+                  if (arm(i)) {
+                     c++;
+                     console.log(i);
+                     if(c==3)
+               break;
+                 }
+              }
+        }
+ firstthreearm(+(prompt("Enter the Starting number")),
+ +(prompt("Enter the Ending Number")));  
+      </code>
+
+
+      <h1 onclick="lastthreearm();" style="text-align: center;color: rgb(127, 246, 0);text-decoration: underline;cursor: pointer;">Last Three Armstrong</h1>     
+      <code id="one">
+        function lastthreearm(st,en) {
+   
+            let c=0;   
+              for(let i=en;i>=st;i--)
+              {
+                   
+                  if (arm(i)) {
+                     c++;
+                     console.log(i);
+                     if(c==3)
+                     break;
+                 }
+              }
+              }
+ lastthreearm(+(prompt("Enter the Starting number")),
+ +(prompt("Enter the Ending Number")));  
+      </code>
+      
+    <h1 onclick="nextarm();" style="text-align: center;color: rgb(127, 246, 0);text-decoration: underline;cursor: pointer;">NEXT Armstrong Number</h1>     
+   <code id="one">
+    function Nextarmstrong(n) {
+   
+          
+          for(let i=n; ;i++)
+          {
+               
+              if (arm(i)) {
+                 console.log(i);
+                 break;
+             }
+          }
+          }
+  Nextarmstrong(+(prompt("Enter the Starting point")));
+   </code>
+   
+      
+   <h1 onclick="prevarm();" style="cursor: pointer;text-align: center;color: rgb(127, 246, 0);text-decoration: underline;">Previous Armstrong Number</h1>     
+   <code id="one">
+    function Nextarmstrong(n) {
+   
+          
+          for(let i=n; ;i--)
+          {
+               
+              if (arm(i)) {
+                 console.log(i);
+                 break;
+             }
+          }
+          }
+  Nextarmstrong(+(prompt("Enter the Starting point")));
+   </code>
+   
+
+
+</pre></div> 
+</body>
+</html>

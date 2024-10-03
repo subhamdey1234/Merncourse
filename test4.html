@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            height: 300px;
+            width: 1400px;
+          border: 2px solid black;
+          gap: 20px;flex-direction: row;
+        }
+        .child{
+            background-color: blue;
+            color: aliceblue;
+            height: 100px;
+            width: 200px;
+        }
+        .one{
+            order: -2;
+        }
+        .four{
+            flex-grow: 1;
+            order: -1;
+        }
+        .five{
+            flex-grow: 2;
+            align-self: center;
+        }
+        .three{
+align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <div class="child one">Item 1</div>
+    <div class="child two">Item 2</div>
+    <div class="child three">Item 3</div>
+    <div class="child four">Item 4</div>
+    <div class="child five">Item 5</div>
+</div>
+
+</body>
+</html>

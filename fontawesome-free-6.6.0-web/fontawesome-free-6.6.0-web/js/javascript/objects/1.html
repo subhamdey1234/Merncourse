@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function obj1() {
+            const person={
+                name:"Subham Dey",
+                age:22,
+                mob:9777837744,
+                email:"sdey06384@gmail.com"
+            }
+            let pname=person.name;
+            let pAge=person.age;
+            console.log(`Student Name=${pname} , Student Age=${pAge}`);/// Accessing using .Dot Notation
+            
+            let p_name=person["name"];
+            let p_Age=person["age"];
+            console.log(`Student Name=${p_name} , Student Age=${p_Age}`);/// Accessing using [] Bracket Notation
+
+
+
+            console.log("-----------Printing Details-----------");
+            
+            for(let key in person)
+            {
+
+                console.log(key+": "+person[key]);
+                
+            }
+
+
+        }
+        obj1();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

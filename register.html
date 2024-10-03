@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/fontawesome/fontawesomecss/css/all.css">
+    <style>
+        .container{
+            margin: 258px 524px 371px;
+            border-radius: 20px;
+            
+
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        height: 260px;
+        width: 500px;
+       text-align: center;
+       
+       
+        }
+        .child{
+            padding: 0px 38px;
+            margin: 5px 12px 7px 24px;
+                  
+        }
+        .child input{
+            background-color: transparent;
+            color: rgb(248, 246, 246);
+            border: none;
+border-bottom: 3px solid rgb(209, 218, 242);
+width: 250px;
+font-weight: 900;
+height: 41px;
+
+        }
+        .child button{
+            background-color: black;
+            border-radius: 25px;
+            color: aliceblue;
+            width: 150px;
+            height: 30px;
+            border: 2px solid #6495aa;
+            margin-top: 6px;
+            font-weight: 900;
+        }
+        .child button:hover{
+            background-color: greenyellow;
+            color: black;
+            transition: 1s;
+            cursor: pointer;
+        }
+        body{
+            background-image: url("https://4kwallpapers.com/images/wallpapers/neon-lights-3d-3840x2160-12485.jpg");
+            background-repeat: no-repeat;
+      background-position: center center;
+       background-size: cover;
+        }
+        ::placeholder{
+            color: rgb(255, 255, 255);
+            font-weight: 900;
+            text-align: center;
+        }
+        h1{
+            font-style: inherit;
+            font-weight: 900;
+            font-variant: small-caps;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        i{
+            color: aliceblue;
+        }
+        B{
+            color: aliceblue;
+            font-weight: 900;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        form{
+            backdrop-filter: blur(10px);
+            height: 370px;
+            border-radius: 40px;
+            border:2px solid #6495aa;
+        }
+        
+ @media screen and (max-width:642px) {
+    body{
+        background-image: url("https://wallpapers.com/images/hd/1920-x-1080-hd-b5dm81xdpze6sjbr.jpg");
+            background-repeat: no-repeat;
+        background-size: 1070px 160%;
+
+      
+        
+    }
+    .container{
+        transform: translate(-473px, -21px);
+        margin-top: 292%;
+        background: none;
+        text-align: center;
+        height: 299px;
+        width: 976px;
+    }
+    ::placeholder{
+        text-align: center;
+    }
+    
+}
+
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <form action="">
+<h1>Registration Form</h1>
+    <div class="child"><i class="fa-solid fa-user"></i><input type="text" placeholder="Create the Username" maxlength="20" minlength="7" required></div>
+   <div class="child"><i class="fa-solid fa-lock"></i><input type="password" placeholder="Create the Passsword" maxlength="40" minlength="6" required></div>
+   <div class="child"><i class="fa-solid fa-lock"></i><input type="password" name="" id="" placeholder="Re-enter the password" maxlength="40" minlength="6" required></div>
+   <div class="child"><i class="fa-solid fa-envelope"></i><input type="email" placeholder="provide the EmailID" maxlength="40" minlength="6" required></div>
+
+   <div class="child"><button type="submit">Submit</button></div>
+   <div class="child"><B> Already Have an Account click </B><a target="_blank" style="color: aliceblue;text-decoration: underline;font-weight: 900; font-family:unset; ;" href="form2.html">Login</a></div>
+
+</div>
+</form>
+</body>
+</html>

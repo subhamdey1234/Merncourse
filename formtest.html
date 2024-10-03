@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+
+        }
+        .container{
+            text-align: center;
+   
+           
+        }
+        form{
+          margin-top: 200px;
+          background-color: transparent;
+          width: 480px;
+          height: 280px;
+          margin: 220px 480px;
+          border-radius: 25px;
+          background-image: linear-gradient(60deg,black,greenyellow,black);
+        }
+        form .child{
+        
+           margin-top: 9px;
+        }
+        form input{
+            padding: 8px;
+            border: none;
+            border-radius: 10px;
+            font-weight: 900;
+
+        }
+        form button{
+            border-radius: 20px;
+            border: 2px solid white;
+            background-color:black;
+            width: 100px;
+            color: aliceblue;
+            margin-top: 15px;
+            cursor: pointer;
+height: 25px;
+font-weight: 900;
+
+        }
+        h1{
+        text-shadow: 100px black;
+        font-variant: small-caps;
+        font-weight: 900;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+        ::placeholder{
+text-align: center;
+font-weight: 900;
+
+        }
+        body{
+            background-image: linear-gradient(45deg,black,greenyellow,rgb(230, 200, 200),greenyellow);
+        }
+        button:hover{
+            background-color: greenyellow;
+            color: rgb(0, 0, 0);
+            font-weight: 900;
+            transition: 0.8s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1>Login Form</h1>
+            <div class="child"><input type="text" placeholder="Enter the Username"></div>
+            <div class="child"><input type="password" placeholder="Enter the Passsword"></div>
+            <div class="child"><input type="email" placeholder="Enter the Email"></div>
+            <div class="child"><input type="tel" placeholder="Enter the mobile number"></div>
+            <div class="child"><button type="submit">Submit</button></div>
+        </form>
+    </div>
+    
+</body>
+</html>

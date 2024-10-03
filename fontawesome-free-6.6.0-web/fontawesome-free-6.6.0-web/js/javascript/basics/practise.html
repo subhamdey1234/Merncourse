@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript
+    </title>
+<script>
+    let p1={
+        Name:'Subham Dey',
+        Rollno:2041004136,
+        grade:'A',
+        fees:30000
+     };
+
+     let p2={
+        Name:'Rohit Sharma',
+        Rollno:2041004245,
+        grade:'A',
+        fees:30000
+     };
+     
+     let p3={
+        Name:'Virat Kohli',
+        Rollno:2041005697,
+        grade:'A',
+        fees:30000
+     };
+
+     let p4={
+        Name:'Salman Khan',
+        Rollno:2041002586,
+        grade:'B',
+        fees:30000
+     };
+
+
+     let p5={
+        Name:'Sameer',
+        Rollno:2041004558,
+        grade:'C',
+        fees:30000
+     };
+
+
+function detailsfetch(Name,roll,grade,fee) {
+   if (p1.Name==Name) {
+    console.log("----------MATCH FOUND----------");
+    console.log(p1);
+   }
+   else if(p2.Name==Name){
+    console.log("----------MATCH FOUND----------");
+    console.log(p2);
+   }
+   else if(p3.Name==name)
+   {
+    console.log("----------MATCH FOUND----------");
+    console.log(p3);
+   }
+   else if(p4.Name==Name)
+   {
+    console.log("----------MATCH FOUND----------");
+    console.log(p4);
+   }
+   else{
+    console.log("!----404 Error-----------!");
+   }
+
+
+
+}
+let names=window.prompt("enter the name of Student");
+let rollno=window.prompt("enter the RollNo of Student");
+let g=window.prompt("enter the grade of Student");
+let fe=window.prompt("enter the Fees of Student");
+
+detailsfetch(names,rollno,g,fe);
+
+
+</script>
+</head>
+
+<body>
+
+<h1 style="text-align: center;color: blue;">javascript practise</h1>
+
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        main();
+        function main() {
+            let flag=true;
+            let ll=+prompt("Lower Limit");
+            let ul=+prompt("Upper Limit");
+            for(let i=ll;i<=ul;i++)
+        {
+            if (isprime(i)) {
+                if (flag) {
+             console.log(i);
+                flag=false;
+            } 
+            else{
+                flag=true;
+            }
+            }
+            
+        }
+        }
+        function isprime(n) {
+            if (n<2) {
+                return false;
+            }
+            for(let i=2;i<=Math.trunc(n/2);i++)
+            {
+                if (n%i==0) {
+                    return false;
+                    
+                }
+               
+                
+            }
+            return true;
+        }
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

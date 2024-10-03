@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body{
+   background-image: url(https://c4.wallpaperflare.com/wallpaper/438/690/443/technology-digital-art-wallpaper-preview.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+h1{
+text-decoration: underline;
+text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: 600;
+color: rgb(115, 244, 115);
+margin-top: 50px;
+
+    }
+    form{
+        text-align: center;
+
+    }
+    form label{
+       
+text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: 600;
+color: aliceblue;
+margin-left: 30px;
+margin-top: 20px;
+font-size: x-large;
+    }
+    form input{
+        padding: 5px;
+        width: 300px;
+        margin-top: 20px;
+        border-radius: 10px;
+        height: 30px;
+        text-align: center;
+        font-weight: 600;
+       font-size: large;
+    }
+    form button{
+        margin-top: 20px;
+        border: none;
+        background-color: red;
+        width: 200px;
+        padding: 6px;
+        color: aliceblue;
+        border-radius: 18px;
+        font-weight: 800;
+       cursor: pointer;
+ }
+ form button:hover{
+    background-color: aquamarine;
+    color: black;
+    font-weight: 800;
+    transition: 1.5s;
+ }
+ #result{
+    font-weight: 600;
+    color: rgb(119, 255, 7);
+    text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ #pay{
+    font-weight: 600;
+    color: rgb(247, 91, 104);
+    text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ #copyright{
+    font-weight: 600;
+    color: rgb(213, 255, 89);
+    text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ .img-contains{
+    text-align: center;
+ }
+ .img-contains img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 120px;
+    border: 2px solid rgb(150, 251, 150);
+ }
+ ::placeholder{
+text-align: center;
+font-weight: 600;
+color: black;
+font-family:monospace;
+ }
+</style>
+
+
+    <script>
+        function calculatebill() {
+            let units=document.getElementById("units").value;
+
+
+            let bill=0;
+            if (units<=200) {
+                bill=0;
+            }
+            else if(units>200 && units<=250)
+            {
+                bill=0+(units-200)*3;
+
+            }
+            else if(units>250 && units<=300)
+            {
+                bill=(50*3)+((units-250)*5);
+            }
+            else if(units>300)
+            {
+                bill=(50*3)+(50*5)+((units-300)*7);
+            }
+            bill=bill.toFixed(2);
+
+            console.log(`The electric bill for ${units} units is $${bill}`);   
+            document.getElementById('result').innerText = `The electric bill for ${units} units is Rs.${bill}`;
+  document.getElementById('pay').innerText=`PLEASE PAY Rs. ${bill}`;
+  
+       
+}
+
+        
+
+    
+       
+    </script>
+</head>
+<body>
+    <div class="img-contains">
+        <img src="ev.jpg" alt="" srcset="">
+    </div>
+
+
+    <h1>ELECTRIC BILL CALCULATOR </h1>
+
+    <form  onsubmit="calculatebill()" action="">
+        <label for="units">Enter the Units CONSUMED:</label>
+        <br>
+        <input placeholder="ENTER THE UNITS" type="number" id="units" required>
+        <br>
+     <button type="button" onclick="calculatebill()">Submit</button>
+    </form>
+    <p id="result"></p>
+    <p id="pay"></p>
+    <p id="copyright">Copyright @Subham Dey</p>
+
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function loop() {
+            for (let i = 1; i <= 10; i++){
+            console.log(i);
+            }
+
+        }
+        loop();
+
+function loop2() {
+    let c=0;
+    str="";
+    for(let i=1;i<=10;i++)
+{
+if (i<=9) {
+    str=str+i+",";///CONCATINATION HAPPENS HERE
+}
+else{
+    str=str+i;////HERE ALSO SAME CONCATINATION IS HAPPENING
+}
+
+
+}
+console.log(str);
+}
+loop2();
+
+
+function efficientprime(n) {//efficient program for find the number is a prime number or not
+    let c=0;
+    if (n<2) {
+        console.log(`${n} is not a prime number`);
+        return;
+        
+    }
+    for(let i=2;i<=Math.trunc(n/2);i++)
+{
+    if (n%i==0) {
+        c++;
+        break;
+    }
+
+}
+if (c==0) {
+    console.log("The number is a prime Number");
+    
+}
+else{
+    console.log("function is not a Prime number");
+    
+}
+
+
+}
+efficientprime(Number(prompt("ENTER THE NUMBER")));
+
+function perfectnumbers(n) {
+    let c=0;
+    for(let i=1;i<n;i++){
+        if (i==n) {
+            return;
+        }
+if (n%i==0) {
+    c+=i;
+}
+
+}
+if (c==n) {
+    console.log(`${n} number is a perfect number`);
+    
+}
+else{
+    console.log("not a perfect number");
+    
+}
+
+}
+perfectnumbers(Number(prompt("enter the number to check perfect number")));
+function fibonacci(n) {
+    let n1=0;
+    if (n==1) {
+        console.log(0);return;
+        
+    }
+    let n2=1;
+    let n3;
+    console.log(n1);//0
+    console.log(n2);//1
+    
+    for(let i=2;i<n;i++){//1 2 3 5 8 ........n
+      n3=n1+n2;
+     console.log(n3);
+     
+     n1=n2;
+     n2=n3;
+}
+}
+fibonacci(Number(prompt("Enter the Number of fibonnaci series to be printed...")));
+function searchfibo(n) {
+    let c=0;
+    let a=0;
+    let b=1;
+    if (n==0 || n==1) {
+        console.log("The number is in fibonacci series");
+        
+    }
+    for(let i=2;i<n;i++)
+{
+    c=a+b;
+    if (c==n) {
+        console.log("The number is in fibonacci series");
+        break;
+    }
+    if (c>=n){
+        console.log("NOT in Fibonacci series");
+        break;
+    }
+    a=b;
+    b=c;
+
+}
+
+}
+searchfibo(Number(prompt("ENTER NUMBER to be searched")));
+
+function alternatefibo(n) {
+    let a=0;
+    let b=1;
+    let c=0;
+    
+    for(let i=2;i<=n;i++)
+{
+c=a+b;
+
+
+if (i%2==0) {
+    console.log(c);
+    a=b;
+b=c;
+}
+
+}
+    
+}
+alternatefibo(Number(prompt("Enter the number")));
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

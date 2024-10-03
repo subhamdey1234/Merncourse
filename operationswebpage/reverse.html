@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+       rev(2555);
+       function rev(n) {
+     let reve=0;
+            while(n>0)
+        {
+            let d=n%10;
+             reve=d+reve*10;
+            n=Math.trunc(n/10);
+        }
+        console.log(reve);
+        
+        }
+     
+    </script>
+
+<style>
+    #one{
+           
+           color: aliceblue;
+           font-weight: 900;
+          font-size: 30px;
+       }
+       .one{
+           background-color: black;
+       margin-left: 400px;
+       margin-right: 300px;
+       }
+       h1{
+           text-align: center;
+       }
+       body{
+           background-image: linear-gradient(60deg,blue,green,yellow);
+           background-repeat: no-repeat;
+       }
+     header  h1{
+        color: rgb(6, 4, 4);
+        font-size: 35px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 900;
+        text-decoration: underline solid rgb(31, 32, 29);
+       }
+       header button{
+            border: 1px solid black;
+            padding: 15px;
+            border-radius: 16px;
+            background-image: linear-gradient(40deg,yellow,green);
+            font-weight: 900;
+            cursor: pointer;
+        }
+        header{
+            text-align: center;
+        }
+        header button:hover{
+            background-image: linear-gradient(40deg,rgb(15, 15, 12),rgb(0, 255, 0)); 
+            color: aliceblue;
+            transition: 0.5s;
+        }
+</style>
+<script>
+
+       function reverse() {
+        let n=Number(prompt("Enter any Number"));
+     let reve=0;
+            while(n>0)
+        {
+            let d=n%10;
+             reve=d+reve*10;
+            n=Math.trunc(n/10);
+        }
+        alert("the reversed Number is=>"+reve);
+        console.log(reve);
+        
+        }
+
+function reverse1() {
+    let num1 = Number(prompt("Enter any Number=>"));
+    let result = num1.toString().split('').reverse().join('');
+    alert("The Reversed Number=>"+result);
+    console.log(result);
+}
+    
+function reverse2() {
+    let num=Number(prompt("Enter the Number=>"))
+        let numStr = num.toString();
+        let reversedStr = '';
+        for (let i = numStr.length - 1; i >= 0; i--) {
+            reversedStr += numStr[i];
+        }
+        alert("The Reversed Number=>"+parseInt(reversedStr));
+        return parseInt(reversedStr);
+    }
+    
+    function reverserec(num, reversed = 0) {
+        if (num === 0) {
+            return reversed;
+        }
+        return reverserec(Math.floor(num / 10),
+            reversed * 10 + num % 10);
+    }
+    function reverse3() {
+        const num = Number(prompt("enter the number=>"));
+        let rev=0;
+      alert("The Reversed Number=> "+reverserec(num,rev));
+    }
+    
+ 
+
+
+</script>
+</head>
+<body>
+    <header>
+        <h1>Reverse Number Program</h1>
+        <a href="./lists.html"> <button>Go to Lists</button></a>
+
+    </header>
+    <div class="code">
+        <pre class="one">
+       <h1 onclick="reverse();" style="text-align: center;color: rgb(127, 246, 0);text-decoration: underline;cursor:pointer;">Reverse Number 1</h1>     
+<code id="one">
+    rev(Number(prompt("Enter any Number")));
+       function rev(n) {
+     let reve=0;
+            while(n>0)
+        {
+            let d=n%10;
+             reve=d+reve*10;
+            n=Math.trunc(n/10);
+        }
+        console.log(reve);
+        
+        }
+     
+</code>
+
+
+
+<h1 onclick="reverse1();" style="text-align: center;color: rgb(127, 246, 0);text-decoration: underline;cursor: pointer;">String Reversal Method</h1>     
+<code id="one">
+    let num1 = Number(prompt("Enter any Number=>"));
+    let result = num1.toString().split('').reverse().join('');
+    console.log(result);
+     
+</code>
+
+
+<h1 onclick="reverse2();" style="text-align: center;color: rgb(127, 246, 0);text-decoration: underline;cursor: pointer;">Using String Iteration Method</h1>
+<code id="one">
+    function reverseFunction(num) {
+        let numStr = num.toString();
+        let reversedStr = '';
+        for (let i = numStr.length - 1; i >= 0; i--) {
+            reversedStr += numStr[i];
+        }
+        return parseInt(reversedStr);
+    }
+    
+    let num = 987654321;
+    let reversedNum = reverseFunction(num);
+    
+    console.log(reversedNum);
+</code>
+
+<h1 style="text-align: center;color: rgb(127, 246, 0);text-decoration: underline;cursor: pointer;" onclick="reverse3();">Using Recursive Function</h1>
+<code id="one">
+    function reverseFunction(num, reversed = 0) {
+        if (num === 0) {
+            return reversed;
+        }
+        return reverseFunction(Math.floor(num / 10),
+            reversed * 10 + num % 10);
+    }
+    
+    const num = Number(prompt("enter the number=>"));
+    const result = reverseFunction(num);
+    
+    console.log(result);
+
+</code>
+
+</pre></div>
+</body>
+</html>
